@@ -1,5 +1,5 @@
 # While testing manually from inside the theme do:
-# ../tuderechoasaber/script/runner ../tuderechoasaber-theme/script/fetch_irekia_responses.rb
+# ../tuderechoasaber/script/runner ../nuvasuparati-theme/script/fetch_irekia_responses.rb
 
 require File.dirname(__FILE__)+'/../lib/irekia_bridge'
 

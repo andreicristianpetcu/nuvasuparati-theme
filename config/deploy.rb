@@ -4,7 +4,7 @@ require 'capistrano/ext/multistage'
 
 set :application, 'tuderechoasaber'
 set :app_branch, "tuderechoasaber.es"
-set :theme, "tuderechoasaber-theme"
+set :theme, "nuvasuparati-theme"
 
 namespace :app do
   desc "Update app code"
