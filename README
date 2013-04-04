@@ -18,7 +18,7 @@ Look in the lib/ folder of the plugin to see how the overrides happen.
 To install:
 -----------
  
-  ./script/plugin install git://github.com/dcabo/asktheeu-theme.git
+  ./script/plugin install git://github.com/andreicristianpetcu/nuvasuparati-theme.git
 
 A symbolic link will be created automatically in the `public/` folder
 of the main app, pointing to the `public/` folder of the theme, in 
@@ -27,7 +27,7 @@ order to serve static assets.
 To uninstall:
 -------------
 
-  ./script/plugin remove git://github.com/dcabo/asktheeu-theme.git
+  ./script/plugin remove git://github.com/andreicristianpetcu/nuvasuparati-theme.git
 
 The symbolic link created during the installation will be removed 
 automatically.
