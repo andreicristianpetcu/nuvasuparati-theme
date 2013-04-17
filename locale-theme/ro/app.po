@@ -1,0 +1,143 @@
+# Your theme's locale files will override the core locale files.  This
+# is a good place to put both translations specific to your theme, and
+# "translations" of the core English words
+
+# Homepage
+
+msgid "Quiénes somos"
+msgstr "Cine suntem noi"
+
+msgid "Guía para solicitantes"
+msgstr "Ghid pentru solicitări"
+
+msgid "Solicitar información"
+msgstr "Solicitări FOI"
+
+msgid "Buscar solicitudes"
+msgstr "Caută solicitări"
+
+msgid "Ejerce tu derecho a saber."
+msgstr "Exercită-ți dreptul de a ști."
+
+msgid "Para obtener información de instituciones públicas:"
+msgstr "Pentru instituții publice:"
+
+msgid "Piensa una pregunta para un organismo público."
+msgstr "Gândește-te la o întrebare pentru o instituție publică"
+
+msgid "Preguntar »"
+msgstr "Solicită »"
+
+msgid "Nosotros enviamos la pregunta por ti."
+msgstr "Vom transmite solicitarea pentru tine."
+
+msgid "Te avisamos cuando haya una respuesta."
+msgstr "Te vom anunța când vei primi un răspuns."
+
+msgid "¿Contestarán? »"
+msgstr "Va răspunde? »"
+
+msgid "Cuenta atrás por la transparencia en España"
+msgstr "Cronometru pentru transparență în România"
+
+msgid "Quedan <span id='days-left'></span> días para que el PP cumpla su promesa de presentar una ley de acceso a la información"
+msgstr "<span id='days-left'></span> zile rămase pentru ca PP să își îndeplinească promisiunea de a introduce o lege despre accesul la informații"
+
+msgid "Haz una búsqueda entre las peticiones ya realizadas:"
+msgstr "Caută prin silicitările deja existente:"
+
+msgid "Novedades"
+msgstr "Noutăți"
+
+msgid "Peticiones destacadas"
+msgstr "Solicitări remarcabile"
+
+
+# Sidebar
+
+msgid "¿Cómo funciona?"
+msgstr "Cum funcționează?"
+
+msgid "¿Quién creó tuderechoasaber.es?"
+msgstr "Cine a creat nuvăsupărați.info?"
+
+msgid "Patrocinadores"
+msgstr "Sponsori"
+
+msgid "¿Cómo nos puedes ayudar?"
+msgstr "Cum funcționează"
+
+msgid "Solicitar información"
+msgstr "Solicită infromații"
+
+msgid "Localizar la institución adecuada"
+msgstr "Găsește instituția portrivită"
+
+msgid "Idiomas"
+msgstr "Limbi"
+
+msgid "Consejos sobre las solicitudes"
+msgstr "Sfat pentru solicitări"
+
+msgid "Respuestas y apelaciones"
+msgstr "Răspunsuri și răspunsuri"
+
+msgid "Moderación de las solicitudes"
+msgstr "Moderarea solicitărilor"
+
+msgid "Tu privacidad"
+msgstr "Protecția detelor personale"
+
+msgid "Información para instituciones"
+msgstr "Informații pentru instituții"
+
+msgid "¿Qué es tuderechoasaber.es?"
+msgstr "Ce este nuvăsupărați.info?"
+
+msgid "Proceso de las solicitudes"
+msgstr "Procesarea solicitărilor"
+
+msgid "Privacidad"
+msgstr "Politică de Confidențialitate"
+
+msgid "Basado en Alaveteli"
+msgstr "Bazat pe Alaveteli"
+
+msgid "API para programadores"
+msgstr "API pentru programatori"
+
+msgid "Agradecimientos"
+msgstr "Mulțumiri"
+
+msgid "Contacto"
+msgstr "Contact"
+
+msgid "Prensa"
+msgstr "Presă"
+
+msgid "¿Cómo puedes colaborar?"
+msgstr "Cum puteți ajuta?"
+
+msgid "Condiciones de uso"
+msgstr "Termeni și condiții"
+
+msgid "Política de privacidad"
+msgstr "Politică de Confidențialitate"
+
+msgid "Ayuda"
+msgstr "Ajutor"
+
+msgid "Guía para realizar solicitudes"
+msgstr "Ghid pentru solicitări"
+
+msgid "API"
+msgstr "API"
+
+msgid "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+msgstr "Conținut Licențiat CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+
+msgid "Un proyecto de"
+msgstr "Un proiect de"
+
+msgid "Con la ayuda de"
+msgstr "Cu ajutorul"
