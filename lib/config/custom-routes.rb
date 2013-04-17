@@ -14,7 +14,7 @@ if ENV["RAILS_ENV"] != "test"
         
         # We want to start by showing the public bodies categories and search only
         map.with_options :controller => 'public_body' do |body|
-            body.body_index "/body/", :action => "index"
+            body.body_index "/body/", :action => "list"
         end
     end
 end
