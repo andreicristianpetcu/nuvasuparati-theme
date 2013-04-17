@@ -108,3 +108,36 @@ msgstr "API pentru programatori"
 
 msgid "Agradecimientos"
 msgstr "Mulțumiri"
+
+msgid "Contacto"
+msgstr "Contact"
+
+msgid "Prensa"
+msgstr "Presă"
+
+msgid "¿Cómo puedes colaborar?"
+msgstr "Cum puteți ajuta?"
+
+msgid "Condiciones de uso"
+msgstr "Termeni și condiții"
+
+msgid "Política de privacidad"
+msgstr "Politică de Confidențialitate"
+
+msgid "Ayuda"
+msgstr "Ajutor"
+
+msgid "Guía para realizar solicitudes"
+msgstr "Ghid pentru solicitări"
+
+msgid "API"
+msgstr "API"
+
+msgid "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+msgstr "Conținut Licențiat CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+
+msgid "Un proyecto de"
+msgstr "Un proiect de"
+
+msgid "Con la ayuda de"
+msgstr "Cu ajutorul"
