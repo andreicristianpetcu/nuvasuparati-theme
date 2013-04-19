@@ -17,10 +17,10 @@ msgid "Buscar solicitudes"
 msgstr "Caută solicitări"
 
 msgid "Ejerce tu derecho a saber."
-msgstr "Exercită-ți dreptul de a ști."
+msgstr "Exercită-ți dreptul de a ști!"
 
 msgid "Para obtener información de instituciones públicas:"
-msgstr "Pentru instituții publice:"
+msgstr "Pentru a obține informații de la instituțiile publice:"
 
 msgid "Piensa una pregunta para un organismo público."
 msgstr "Gândește-te la o întrebare pentru o instituție publică"
@@ -29,10 +29,10 @@ msgid "Preguntar »"
 msgstr "Solicită »"
 
 msgid "Nosotros enviamos la pregunta por ti."
-msgstr "Vom transmite solicitarea pentru tine."
+msgstr "Vom transmite solicitarea pentru tine"
 
 msgid "Te avisamos cuando haya una respuesta."
-msgstr "Te vom anunța când vei primi un răspuns."
+msgstr "Te vom anunța când vei primi un răspuns"
 
 msgid "¿Contestarán? »"
 msgstr "Va răspunde? »"
@@ -134,10 +134,13 @@ msgid "API"
 msgstr "API"
 
 msgid "Contenido bajo licencia CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
-msgstr "Conținut Licențiat CC BY SA 3.0<br/>Creative Commons Attribution Share-Alike"
+msgstr "Conținut Licențiat CC BY SA 3.0<br/>Atribuire - Distribuire-în-condiţii-identice"
 
 msgid "Un proyecto de"
 msgstr "Un proiect de"
 
 msgid "Con la ayuda de"
 msgstr "Cu ajutorul"
+
+msgid "¡Colabora con nosotros!"
+msgstr "Colaborează cu noi"
