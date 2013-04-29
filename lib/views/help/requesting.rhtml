@@ -1,4 +1,4 @@
-<% @title = "Bine aţi venit! " %>
+<% @title = "Bine aţi venit! " %
 
 <%= render :partial => 'sidebar' %>
 
@@ -8,13 +8,13 @@
     <p><%= link_to 'NuVăSupăraţi.info', help_about_path %> oferă un serviciu public voluntar, atât pentru cetățeni/activişti, cât și pentru instituții/funcţionari, adică pentru amândouă lentilele perechii de ochelari prin care priveşte poporul român spre viitor. Gândiți-vă că site-ul nostru reprezintă șurubelele care fixează lentilele pe ramă :-) În această pagină, vă punem la dispoziţie un ghid de utilizare a platformei de acces la informaţii NuVăSupăraţi.info, cu următoarele secţiuni:</p>
 
 	<h3><a href="#utilizare">Cum se foloseşte NuVăSupăraţi.info?</a></h3>
-	<h3><a href="#info-doc">Informaţii şi documente—distincţii</a></h3>
+	<h3><a href="#info-doc">Informaţii şi documente&#8212;distincţii</a></h3>
 	<h3><a href="#din-oficiu">Informaţii comunicabile din oficiu</a></h3>
 	<h3><a href="#tehnici">Tehnici de acces la informaţii</a></h3>
-	<h3><a href="#raspunsuri">Răspunsuri de la instituţii—termene şi costuri</a></h3>
+	<h3><a href="#raspunsuri">Răspunsuri de la instituţii&#8212;termene şi costuri</a></h3>
 	<h3><a href="#exceptii">Excepţii de la liberul acces la informaţii</a></h3>
-	<h3><a href="#reclamatie-plangere">Reclamaţie sau plângere—pentru nemulţumiţi</a></h3>
-	<h3><a href="#resurse">Surse de documentare—pentru curioşi</a></h3>
+	<h3><a href="#reclamatie-plangere">Reclamaţie sau plângere&#8212;pentru nemulţumiţi</a></h3>
+	<h3><a href="#resurse">Surse de documentare&#8212;pentru curioşi</a></h3>
 	<h3><a href="#global">Accesul la informaţii în lume</a></h3>
 
     <h1 id="utilizare">Cum se foloseşte NuVăSupăraţi.info?</h1>
@@ -24,187 +24,87 @@
       <ul>
         <li>apăsaţi pe butonul <%= link_to 'solicitare nouă', body_index_path %> şi veţi ajunge într-o fereastră de unde puteţi selecta instituţia căreia doriţi să-i transmiteţi solicitarea;</li>
         <li>treceţi în revistă solicitările deja adresate acelei instituţii, poate că există deja un răspuns la întrebările dumneavoastră; dacă nu,</li>
-        <li>apăsaţi pe butonul de [start] şi ajungeţi într-o nouă fereastră, în care formularea standard a solicitării este deja completată.</li>
+        <li>apăsaţi pe butonul de start şi ajungeţi într-o nouă fereastră, în care formularea standard a solicitării este deja completată.</li>
       </ul>
-    <p>
-	
+    </p>
 	<p>În acea nouă fereastră urmează să scrieţi exact ce anume vreţi să ştiţi de la instituţie. Dacă vă veţi întreba de ce scrie deja că solicitaţi „o copie a documentului oficial care conţine informaţia . . .,” v-am pregătit un răspuns ancorat în <%= link_to 'distincţiile dintre informaţii şi documente', help_requesting_path(:anchor => 'info-doc') %> şi în anexele prevăzute de <%= link_to 'normele metodologice', help_hg123_path %>.</p>
 	<p>Acum, dacă ştim cum să scriem solicitarea, <%= link_to 'cui s-o adresăm', body_index_path %>, ce anume <%= link_to 'să cerem şi ce nu putem obţine', help_requesting_path(:anchor => 'exceptii') %>, care sunt <%= link_to 'tehnicile', help_requesting_path(:anchor => 'tehnici') %> prin care putem creşte probabilitatea de-a primi un răspuns pozitiv, respectiv cât costă şi care sunt termenele în care trebuie să primim <%= link_to 'răspuns', help_requesting_path(:anchor => 'raspunsuri') %> e momentul să devoalăm un pic din obiectivele noastre, din aspiraţiile acestui proiect:</p>
- 
- 
- 
- 
- 
-    <h2 id="1">1. ¿Tengo derecho a realizar una solicitud?</h2>
-    <p>España no cuenta todavía con una ley de transparencia y acceso a la información, por lo que conseguir respuestas de las instituciones públicas españolas no siempre es fácil. De hecho, puede resultar muy difícil, ¡pero no es imposible! Nosotros te animamos a que hagas una petición de todos modos. Así acostumbramos a nuestras instituciones a que existe una demanda.</p>
-    <p>Actualmente la única norma que reconoce parcialmente el acceso a la información en España es el artículo 37 de la <a href="http://noticias.juridicas.com/base_datos/Admin/l30-1992.t4.html#a37">Ley 30/1992 de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común</a>. Este reconocimiento es muy débil y limita el acceso a gran parte de la información a aquellos que tengan un “interés legítimo”, es decir que justifiquen que tienen una relación directa con la información que solicitan.</p>
-    <p>¡Pero no nos demos por vencidos! Existen otras normas que reconocen el acceso a la información en ciertas materias. Por ejemplo, <a href="http://www.boe.es/buscar/doc.php?id=BOE-A-2006-13010">la Ley 27/2006, de 18 de julio</a>, por la que se regulan los derechos de acceso a la información, de participación pública y de acceso a la justicia en materia de medio ambiente o el <a href="http://www.boe.es/diario_boe/txt.php?id=BOE-A-2011-17887">Texto Refundido de la Ley de Contratos del Sector Público</a>.</p>
-    <p>A nivel estatal no existe una ley de transparencia pero algunas Comunidades Autónomas como Navarra ya han aprobado sus leyes. Consulta <a href="#making_requests_regional">los detalles de estas legislaciones</a>.</p>
-
-    <h2 id="2">2. ¿Qué información puedo solicitar?</h2>
-    <p>En España, el artículo 37 de la ley 30/1992 limita la información que puede ser solicitada a aquella que se encuentre en Registros y documentos de expedientes correspondientes a procedimientos terminados y, dentro de esta información, la ley indica que no será posible solicitar información a la que solo puedan acceder los interesados, información cuyo acceso queda regulado en otra ley e información cuyo acceso no está permitido por otra ley.</p>
-    <p>Estas limitaciones son muy numerosas, por eso es necesario preparar bien la solicitud antes de enviarla e intentar adelantarnos a las posibles excusas que puedan interponer para denegar el acceso.</p>
-    <p>Como ya hemos visto, los asuntos ambientales suponen una excepción, puesto que en este caso sí tenemos un derecho claro de acceso a cualquier tipo de documento y a la información medioambiental por eso recomendamos que siempre que se pueda hacer la conexión se alegue que la información solicitada es información medioambiental.</p>
-    <p>Otra opción si queremos asegurarnos un mayor éxito en nuestra solicitud es intentar solicitar la información a la Unión Europea, ya sea porque está directamente relacionada con asuntos europeos o de nuevo intentando hacer la conexión, por ejemplo, la información sobre agricultura o pesca. El <a href="http://www.europarl.europa.eu/RegData/PDF/r1049_es.pdf">Reglamento 1049/2001 de acceso a documentos en manos de las instituciones comunitarias</a> tiene un alcance muy amplio y establece la obligación de las instituciones a contestarte en 15 días. Si es así, haz tu solicitud directamente a Bruselas: al igual que tuderechoasaber.es existe otra web a ese nivel, <a href="http://www.asktheeu.org">Ask The EU</a>.</p>
-    <p>Por último, ten en cuenta que aunque no podamos solicitar mucha información, sí existen numerosas normas que obligan a las administraciones a publicar proactivamente algunas cuestiones como los contratos públicos, las subvenciones o los presupuestos. Así que si no encuentras información sobre estas materias, tienes derecho a solicitarla. Los organismos correspondientes deberán indicarte dónde está publicada y si no lo está, deberán publicarla.</p>
-
-    <h2 id="3">3. ¿A quién puedo dirigirme?</h2>
-    <p>A través de esta página puedes enviar solicitudes de acceso a la información a cualquier institución pública española a nivel nacional, autonómico y local. Además, podrás solicitar información a empresas públicas como AENA o RTVE.</p> 
-    <p>Seguimos construyendo tuderechoasaber.es, por lo que puede ocurrir que aún no tengamos algunos contactos o nos falte alguna institución. En este caso, por favor, avísanos e intentaremos encontrarla lo antes posible. Por otra parte, si puedes darnos la información sería estupendo. Así podríamos incluirla rápidamente en la web y otras personas se beneficiarán de tu aportación.</p>
-    <p><%= link_to 'Pincha aquí para ver la lista completa de instituciones', list_public_bodies_default_path %>.</p>
-
-    <h2 id="4">4. ¿Por qué debería solicitar información a las instituciones españolas?</h2>
-    <p>En una democracia sana, los ciudadanos deben poder saber lo que hacen sus gobiernos.</p>
-    <p><strong>Para poder participar en la actividad pública:</strong> Para poder votar a nuestros representantes, necesitamos poder tener toda la información sobre quién toma las decisiones y en qué criterios se basan.</p>
-    <p><strong>Para exigir mayor transparencia:</strong> En España no tenemos una ley de acceso a la información. Somos, junto con Malta, Chipre y Luxemburgo, los únicos en no contar con este tipo de legislación en Europa. <a href="http://www.access-info.org/es/coalicion-pro-acceso/209-resultados-de-la-campana-de-las-100-preguntas">Además, en la práctica, casi el 60% de la información que se solicita a las instituciones públicas españolas se queda sin respuesta alguna.</a> Debemos exigir que esto cambie, debemos demandar más transparencia. <strong>La mejor manera de exigir nuestro derecho es ejercerlo.</strong></p>
-    <p><strong>Para prevenir los casos de corrupción:</strong> El derecho de acceso a la información tiene un efecto disuasorio y preventivo. La posibilidad de poder solicitar cualquier información relacionada con la actividad pública hace que haya menos tentación de cometer actos corruptos, e incluso mejora y hace más eficiente el trabajo de las instituciones públicas.</p>
-
-    <h1 id="#info-doc">Localizar la institución pública adecuada</h1>
-
-    <h2 id="5">5. ¿Qué pasa si no sé a qué organismo tengo que dirigirme?</h2>
-    <p>Si tienes una pregunta pero no estás seguro del organismo público al que tienes que dirigirte para solicitar la información que necesitas, prueba lo siguiente:</p>
-    <ul>
-        <li>Consulta o busca en tuderechoasaber.es solicitudes similares a la tuya.</li>
-        <li>Lee la descripción de cada organismo público para informarte de lo que hacen.</li>
-        <li>Cuando hayas encontrado el organismo que, en tu opinión, posee la información deseada, usa el enlace de la “página principal” para consultar su sitio web.</li>
-        <li>En el caso de que no hayas acudido al organismo correcto, puedes preguntarle dónde deberías enviar tu solicitud. Si lo saben, deberían informarte de ello.</li>
-        <li>Si todavía tienes dudas, por favor <a href="<%= help_contact_url %>">pónte en contacto con nosotros</a> para que podamos ayudarte.</li>
-    </ul>
-
-    <h1 id="din-oficiu">Idiomas</h1>
-
-    <h2 id="6">6. ¿Qué idiomas puedo usar?</h2>
-    <p>tuderechoasaber.es tiene como ambición estar disponible en todos los idiomas oficiales de España. De momento está en construcción, por lo que puede ser que algunas partes de la web no estén traducidas.</p>
-    <p>Si deseas colaborar como traductor voluntario escríbenos a <a href="mailto:contacto@tuderechoasaber.es">contacto@tuderechoasaber.es</a>.</p>
-    <p>En cualquier caso, en las comunidades donde haya un idioma cooficial, se podrá utilizar este para las solicitudes que vayan dirigidas a las mismas. No podrá usarse fuera de éstas, ya que tuderechoasaber.es no traduce las solicitudes.</p>
-
-    <h1 id="tehnici">Consejos sobre las solicitudes</h1>
-    
-    <h2 id="focused">7. ¿Qué constituye una buena solicitud?</h2>
-    <p>Por favor, incluye en tu solicitud la información necesaria para identificar fácilmente la información que estás pidiendo.</p>
-    <p>Los mensajes cortos y concisos hacen que sea más fácil para los funcionarios identificar la información que pides, lo que significa que recibirás una respuesta más rápidamente.</p>
-    <p>Además, una petición bien formulada da menos razones a los funcionarios para rechazarla por considerarla vaga o poco precisa. Sin embargo, no te preocupes por hacerla perfecta: en principio, en caso de que tu solicitud no sea clara, la institución a la que la envíes debería ponerse en contacto contigo para aclararla.</p> 
-    <p>Por favor, no incluyas:</p>
-    <ul>
-        <li>Argumentos basados en un tema o causa de tipo personal;</li>
-        <li>Declaraciones que puedan difamar o insultar a terceras personas;</li>
-        <li>Lenguaje ofensivo.</li>
-    </ul>
-    <p>En caso contrario, nos veremos obligados a rechazar tu petición. Si fuera así, te lo haríamos saber y estaríamos siempre dispuestos a discutir caso por caso.</p>
-    
-    <h2 id="data_protection">8. ¿Puedo pedir información sobre mí mismo?</h2>
-    <p>No utilices tuderechoasaber.es para acceder a tu propia información personal. Si quieres información sobre ti mismo, utiliza preferiblemente las normas de Protección de Datos. <a href="https://www.agpd.es/portalwebAGPD/canalciudadano/derechosciudadano/contenido_del_derecho/index-ides-idphp.php">Haz clic aquí para más información.</a></p>
-
-    <h2>9. ¿Puedo enviar la misma solicitud a distintos órganos?</h2>
-    <p>Puedes pedir la misma información a más de una institución, si bien es mejor empezar por la institución que tenga más posibilidades de tener la información que necesitas.</p>
-    <p>Si esa institución no cuenta con todos los documentos relevantes, puedes preguntar a quién deberías enviar tu solicitud.</p>
-    <p>Actualmente no existe un sistema automático para enviar las peticiones al resto de autoridades, tendrás que copiarlo y pegarlo a mano.</p>
-
-    <h1 id="raspunsuri">Respuestas y apelaciones</h1>
-
-    <h2>10. ¿Tendré que pagar por solicitar información?</h2>
-    <p>Solicitar información en España es gratuito.</p> 
-    <p>Recibir información en formato electrónico es gratuito. Es recomendable indicar que en qué formato se prefiere recibir la información.</p>
-    <p>En el caso en que se quiera recibir información impresa, la institución puede cobrar una tasa por realizar estas copias, estas tasas no deberían equivaler únicamente al precio real de la copia y no debería suponer un lucro para la institución.</p>
-
-    <h2 id="quickly_response">11. ¿Cuándo obtendré una respuesta?</h2>
-    <p>Según la legislación vigente, en general, las instituciones españolas tienen <strong>3 meses</strong> para contestar a las solicitudes de información.</p>
-    <p>Este tiempo es excesivo, la media en Europa es de 15 días hábiles. Por eso en tuderechoasaber.es te avisaremos cuando haya pasado un mes, para que si quieres reclames tu información. Puedes llamar a la institución a la que realizaste la solicitud para preguntar en qué estado se encuentra tu petición.</p> 
-    <p>Las instituciones también tendrán <strong>30 días</strong> para contestar a solicitudes sobre información medioambiental. Al realizar tu solicitud verás una casilla que deberás marcar si estás solicitando información medioambiental.</p>
-    <p>No te preocupes por tener todo esto en la cabeza. El sistema también te avisará si pasa el plazo y no recibes respuesta.</p>
-    <p>Normalmente, al enviar tu solicitud, las instituciones deben darte algún tipo de recibo o e-mail de confirmación. Es recomendable exigir este tipo de documentos por si tuvieras que recurrir en un futuro.</p>
-  
-    <h2>12. ¿Puedo reutilizar la información recibida?</h2>
-    <p>En general, la información en manos de las instituciones públicas españolas es “pública” en el sentido de que han sido creadas con el dinero de los contribuyentes. Por lo tanto tendrías que ser libre de utilizar los documentos que recibes y la información que contienen.</p>
-    <p>Sin embargo, existen normas que regulan la reutilización de la información del sector público, pero esto solo te concierne si has solicitado un gran volumen de información o una base de datos.</p>
-    <p>En caso de duda, especialmente si tienes pensado utilizar el material para propósitos comerciales, pregunta al organismo al que has solicitado la información o ponte en contacto con nosotros.</p>
-    
-    <h2>13. ¿Qué pasa si no recibo una respuesta?</h2>
-    <p>Si no recibes una respuesta a tiempo, tuderechoasaber.es te enviará un correo. Puedes recibir dos tipos de aviso por parte de tuderechoasaber.es:
-      <ol>
-        <li>El primero, transcurrido un mes desde que enviaste tu solicitud para que, si lo deseas, contactes con la institución a la que enviaste tu solicitud y puedas preguntar por ésta. Si se trata de información medioambiental este aviso indicará que ha transcurrido el plazo para que te contesten.</li>
-        <li>El segundo, transcurridos tres meses desde que enviaste tu solicitud para que, si lo deseas, puedas reclamar tu derecho a la información.</li>
-      </ol>
-    </p>
-
-    <h2>14. ¿Qué pasa si recibo una respuesta que no me satisface?</h2>
-    <p>Hay cierto número de casos en los que puedes estar insatisfecho con la respuesta a tu solicitud:</p>
-    <ol>
-        <li>Sólo has recibido parte de la información que solicitaste (pero no un rechazo formal), o la información que te ha sido facilitada es irrelevante o no responde completamente a tu pregunta – puedes calificar tu respuesta como “respuesta incompleta”;</li>
-        <li>Te han dicho que la información “no está en poder” del organismo al que enviaste tu solicitud;</li>
-        <li>Te han denegado el acceso a la información o a los documentos que has solicitado (mira también el punto 16 sobre denegaciones);</li>
-        <li>No has recibido ninguna respuesta (“silencio administrativo”).</li>
-    </ol>
-    <p>Tendrás la posibilidad de “clasificar” tu respuesta según una lista de categorías (ver punto 15). Si no sabes cómo hacerlo te ayudaremos.</p>
-    <p>Si piensas que la respuesta es incorrecta, puedes contactar con la institución o interponer un recurso administrativo. Para más información sobre esto, <a href="#17">haz clic aquí</a>.</p>
-
-    <h2>15. Clasificación de las respuestas</h2>
-    <p>Las respuestas de las administraciones pueden ser muy diversas y según lo que nos contesten deberemos reaccionar de una u otra manera:</p>
     <p>
       <ul>
-        <li>Información recibida: La institución ha contestado a tiempo y con la información solicitada.</li>
-        <li>Información recibida parcialmente: La institución ha contestado a tiempo pero no con toda la información solicitada porque considera una parte de esta información no debe ser pública.</li>
-        <li>No tiene la información: La institución contesta alegando que no tienen la información</li>
-        <li>Información incompleta: La institución ha contestado a tiempo pero no incluye toda la información solicitada.</li>
-        <li>Información inadecuada: La respuesta de la institución no corresponde a la información solicitada.</li>
-        <li>Silencio: Transcurrido el tiempo que tiene para contestar, la institución no ha contestado.</li>
-        <li>Esperando respuesta</li>
-        <li>Esperando una aclaración</li>
-        <li>Información denegada: la institución ha contestado denegando la información</li>
-        <li>Requiere revisión del administrador: Marca esta casilla si quieres que administrador revise la pregunta o la respuesta de esta solicitud.</li>
+        <li>componenta practică&#8212;vă punem la dispoziţie un instrument prin care puteţi solicita informaţii de la instituţiile publice, fără să fiţi nevoiţi să citiţi tot ce scrie în lege; tehnologia ne permite să câştigăm timp;</li>
+        <li>componenta educativă&#8212;instrumentul vă poate creşte orizontul de cunoaştere, având acces la informaţii oficiale din partea instituţiilor publice; comparând răspunsurile deja găzduite pe site, veţi afla lucruri noi;</li>
+        <li>componenta participativă&#8212;implicând mai mulţi oameni în dialogul cu instituţiile şi autorităţile publice, veţi testa în ce măsură există participare publică în comunitatea voastră şi dacă o puteţi impulsiona în direcţia parteneriatului cu şi încrederii în instituţii.</li>
       </ul>
     </p>
-    <p>En los casos en los que no quedemos satisfechos con la respuesta por falta de respuesta, por ser incompleta o inadecuada, recomendamos antes plantear un recurso, dirigirnos de nuevo a la institución que nos contesta para intentar recibir la información solicitada.</p>
 
-    <h2 id="16">16. ¿Cuáles son las causas por las que pueden denegarme la información que he solicitado?</h2>
-    <p>La Ley 30/1992 de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común establece que no se podrá ejercer el derecho de acceso a la siguiente información:
-        <ol>
-            <li>Los documentos que contengan información sobre las actuaciones del Gobierno del Estado o de las Comunidades Autónomas, en el ejercicio de sus competencias constitucionales no sujetas a Derecho Administrativo.</li>
-            <li>Los que contengan información sobre la Defensa Nacional o la Seguridad del Estado.</li>
-            <li>Los tramitados para la investigación de los delitos cuando pudiera ponerse en peligro la protección de los derechos y libertades de terceros o las necesidades de las investigaciones que se estén realizando.</li>
-            <li>Los relativos a las materias protegidas por el secreto comercial o industrial.</li>
-            <li>Los relativos a actuaciones administrativas derivadas de la política monetaria.</li>
-        </ol>
+	<h1 id="din-oficiu">Informaţii şi documente&#8212;distincţii</h1>
+	<p>Conform <%= link_to 'art. 2, lit. b) din lege', help_legea544_path %>, „prin informaţie de interes public se înţelege orice informaţie care priveşte activităţile sau rezultă din activităţile unei autorităţi publice sau instituţii publice, indiferent de suportul ori de forma sau de modul de exprimare a informaţiei.” Distincţia dintre informaţii şi documente este vizibilă şi în prevederile art. 5 din lege, de unde aflăm care sunt informaţiile care se comunică din oficiu:</p> 
+    <p>
+      <ul>
+		<li>regulamentul de funcţionare şi organizare a autorităţii sau instituţiei publice;</li>
+		<li>structura organizatorică, atribuţiile departamentelor, programul de funcţionare, programul de audienţe;</li>
+		<li>identitatea persoanelor din conducere şi a celor responsabile cu difuzarea informaţiilor publice;</li>
+		<li>coordonatele de contact (denumirea oficială, adresa, numerele de telefon, fax, email, pagina de internet);</li>
+		<li>sursele financiare, bugetul şi bilanţul contabil;</li>
+		<li>programele şi strategiile proprii (inclusiv planurile de achiziţii şi/sau investiţii);</li>
+		<li>lista documentelor de interes public;</li>
+		<li>lista categoriilor de documente produse şi/sau gestionate;</li>
+		<li>modalităţile de contestare a deciziei instituţiei/autorităţii, în situaţia în care persoana se simte vătămată în privinţa dreptului de acces la informaţii publice;</li>
+		<li>buletinul informativ;</li>
+		<li>raportul periodic de activitate a instituţiei publice.</li>
+      </ul>
     </p>
-    <p>Pero esto no debe desmotivarte. Si tienes una pregunta, hazla, aunque pienses que pueda ser información no accesible en España. Si te deniegan la información, el equipo de tuderechoasaber.es está dispuesto a aconsejarte sobre la posibilidad de presentar un recurso.</p>
+	 
+	<h1 id="tehnici">Tehnici de acces la informaţii</h1>
+	<p>Cu cât avem o solicitare mai concretă, cu atât sunt mai mari şansele să existe un document oficial şi să putem primi un răspuns favorabil. Totuşi, o solicitare prea concretă ne poate pune în situaţia că nu există un astfel de document, nici măcar oficial, ca-n cazul frunzelor de la <%= link_to 'ficus', help_requesting_path(:anchor => 'info-doc') %>. Uneori, pentru anumite categorii de informaţii „sensibile,” ne pot creşte şansele de-a primi un răspuns favorabil dacă utilizăm una din următoarele tehnici:</p>
+    <p>
+      <ul>
+		<li>mai multe solicitări, de la mai multe persoane, către aceeaşi instituţie, pentru a sublinia faptul că există interes în comunitate pentru acea informaţie;</li>
+		<li>mai multe solicitări, către mai multe instituţii similare, dintre care unele vor răspunde mai repede şi mai complet decât altele, ceea ce ne dă posibilitatea să estimăm şi/sau să punem presiune pentru obţinerea unui răspuns;</li>
+		<li>mai multe solicitări, către mai multe instituţii în lanţul ierarhic, pentru a creşte probabilitatea că vom obţine cel puţin un răspuns de la care să putem reconstrui mozaicul de informaţii de care avem nevoie;</li>
+		<li>mai multe solicitări cu obiect diferit (dar foarte larg), eventual de la mai multe persoane, dar către aceeaşi instituţie, pentru a verifica dacă informaţia este înscrisă la fel în mai multe documente oficiale ori dacă apar discrepanţe între acestea; în egală măsură, informaţia foarte specifică pe care o căutăm se poate afla tocmai la intersecţia mulţimilor de informaţii largi/diverse pe care le-am solicitat.</li>	 
+      </ul>
+    </p>
+	 
+	<h1 id="raspunsuri">Răspunsuri de la instituţii&#8212;termene şi costuri</h1>
+	<p>Informaţiile fixate în documente oficiale pot fi solicitate verbal (la sediu ori prin telefon) sau în scris (inclusiv prin fax ori email), de la orice instituţie/autoritate publica şi de către orice persoană:</p>	 
+    <p>
+      <ul>
+		<li>dacă informaţia este solicitată verbal/telefonic, răspunsul poate fi primit pe loc; dacă informaţia astfel solicitată este mai complexă, va fi nevoie să reveniţi cu o solicitare scrisă;</li>
+		<li>dacă informaţiile solicitate fac parte din categoria celor exceptate <%= link_to 'exceptate', help_requesting_path(:anchor => 'exceptii') %> de la liberul acces ori nu sunt de competenţa instituţiei respective, veţi primi o înştiinţare scrisă din partea instituţiei, în termen de 5 zile de la depunerea solicitării;</li>
+		<li>dacă informaţiile solicitate sunt disponibile în documente oficiale uşor accesibile, răspunsul la o solicitare scrisă ar trebui primit în 10 zile calendaristice de la depunerea acesteia;</li>
+		<li>dacă sunt necesare mai mult de 10 zile pentru colectarea și prelucrarea informaţiilor, în termenul de 10 zile veţi primi o adresă prin care se comunică faptul că răspunsul va sosi în termen de 30 de zile de la depunerea solicitării.</li>	 
+      </ul>
+    </p>
+	<p>Persoana care solicită informaţiile va trebui să plătească numai costul copierii documentelor deţinute de instituţia publică (preţul pieţei pare să fie în jur de 10 bani/pagina A4, incluzând TVA şi marja de profit a operatorilor privaţi); desigur, dacă informaţiile au fost solicitate în format electronic, costul de copiere nu se mai justifică. Dacă nu sunteţi mulţumiţi de răspunsul primit, dacă s-a depăşit termenul ori vi se cere să acoperiţi costuri nejustificate, aveţi la dispoziţie reclamaţia administrativă sau <%= link_to 'plângerea în instanţă', help_requesting_path(:anchor => 'reclamatie-plangere') %>.</p> 
+	
+	<h1 id="exceptii">Excepţii de la liberul acces la informaţii</h1>
+    <p>Solicitările de informaţii de interes public vă sunt utile atunci când doriţi să vă informaţi despre bunul mers al treburilor publice (<a href="http://www.cdep.ro/pls/dic/site.page?den=act2_1&par1=2#t2c2s0a31">art. 31, alin. 2 din Constituţie</a>). Dacă aveţi de rezolvat o problemă de interes personal, trebuie să ştiţi că NuVăSupăraţi.info nu vă poate ajuta nici să obţineţi autorizaţii de construire, nici să grăbiţi retrocedarea casei părinteşti, nici să vă plângeţi de vecinul care dă muzica prea tare. Cu alte cuvinte, Legea 544/2001 nu vă poate ajuta acolo unde se aplică exclusiv <a href="http://www.cdep.ro/pls/legis/legis_pck.htp_act?ida=33513">Ordonanţa 27/2002</a> privind reglementarea activităţii de soluţionare a petiţiilor. În afara problemelor de interes personal pe care le puteţi soluţiona doar prin exercitarea <a href="http://www.cdep.ro/pls/dic/site.page?den=act2_1&par1=2#t2c2s0a51">dreptului de petiţionare</a>, mai există câteva categorii de informaţii la care Legea 544/2001 nu vă garantează accesul, cum ar fi cele menţionate <%= link_to 'în art. 12', help_legea544_path %></p>
+    <p>
+      <ul>
+		<li>informaţiile din domeniul apărării naţionale, siguranţei și ordinii publice, dacă fac parte din categoriile informaţiilor clasificate, <a href="http://www.cdep.ro/pls/legis/legis_pck.htp_act?ida=35790">potrivit legii</a>;</li>
+		<li>informaţiile privind deliberările autorităţilor, precum și cele care privesc interesele economice și politice ale României, dacă fac parte din categoria informaţiilor clasificate, <a href="http://www.cdep.ro/pls/legis/legis_pck.htp_act?ida=35790">potrivit legii</a>;</li>
+		<li>informaţiile privind activităţile comerciale sau financiare, dacă publicitatea acestora aduce atingere dreptului de <a href="http://www.inregistrare-marci.ro/legislatie/index.php">proprietate intelectuală</a> ori principiului <a href="http://www.consiliulconcurentei.ro/ro/documente-oficiale/concurenta/cadrul-legislativ/concurenta-legea-21-1996.html">concurenţei loiale</a>, potrivit legii;</li>
+		<li>informaţiile cu privire la datele personale, <a href="http://www.cdep.ro/pls/legis/legis_pck.htp_act?ida=32479">potrivit legii</a>;</li>
+		<li>informaţiile privind procedura în timpul anchetei penale sau disciplinare, dacă se periclitează rezultatul anchetei, se dezvăluie surse confidenţiale ori se pun în pericol viaţa, integritatea corporală, sănătatea unei persoane în urma anchetei efectuate sau în curs de desfășurare;</li>
+		<li>informaţiile privind procedurile judiciare, dacă publicitatea acestora aduce atingere asigurării unui proces echitabil ori interesului legitim al oricăreia dintre părţile implicate în proces;</li>
+		<li>informaţiile a căror publicare prejudiciază măsurile de protecţie a tinerilor.</li>
+      </ul>
+    </p>
+	
+	<h1 id="reclamatie-plangere">Reclamaţie sau plângere&#8212;pentru nemulţumiţi</h1>
+    <p>
+      <ul>
+		<li>Dacă răspunsul primit din partea instituţiei vă nemulţumeşte, puteţi folosi reclamaţia administrativă. Adresaţi-vă conducătorului instituţiei publice căreia i-aţi solicitat informaţia, în termen de 30 de zile de la primirea răspunsului pe care îl consideraţi nemulţumitor sau de la expirarea termenului de <%= link_to 'răspuns din partea instituţiei', help_requesting_path(:anchor => 'raspunsuri') %>. Instituţia este obligată să declanşeze o cercetare administrativă, pentru a vă putea răspunde la reclamaţie. În termen de 15 zile de la depunerea reclamaţiei administrative, dacă reclamaţia se dovedește a fi întemeiată, veţi primi un răspuns care va cuprinde informaţiile solicitate iniţial şi modul în care a fost sancţionat disciplinar funcţionarul care a greșit.</li>
+		<li>Dacă răspunsul primit din partea instituţiei vă încalcă <a href="http://www.cdep.ro/pls/dic/site.page?den=act2_1&par1=2#t2c2s0a31">dreptul la informaţie</a> sau dacă nu primiţi răspuns nici la reclamaţia administrativă, aveţi posibilitatea de-a înainta o plângere în instanţă. Adresaţi-vă la secţia de contencios administrativ a tribunalului, în termen de maxim 30 de zile de la încheierea <%= link_to 'termenului de răspuns', help_requesting_path(:anchor => 'raspunsuri') %>. Hotărârea tribunalului poate fi supusă recursului la Curtea de apel. Decizia Curţii de apel este definitivă și irevocabilă. Plângerea la tribunal și recursul la Curtea de apel se judecă în procedură de urgenţă, fiind scutite de plata obişnuitei taxe de timbru. O mulţime de exemple sunt disponibile în <a href="http://www.ipp.ro/jurisprudenta544/">jurisprudenţă</a>, dacă doriţi să vă documentaţi în <a href="http://apador.org/acc_cases.php?tip=8&order=date%20desc">detaliu</a>.</li>
+		<li>Dacă vă nemulţumeşte modul de funcţionare a platformei NuVăSupăraţi.info, luaţi <%= link_to 'legătura cu noi ', help_contact_path %> şi vom încerca să remediem deficienţele în cel mai scurt timp.</li>	
+      </ul> 
+    </p> 
     
-    <h2>17. Los recursos en España</h2>
-    <p>Recurso de alzada: Si no estás satisfecho con la respuesta recibida, puedes recurrir en primer lugar a la misma institución; es un recurso administrativo que no cuesta dinero.</p>
-    <p>Si el recurso administrativo no cambia nada, puedes recurrir ante los tribunales. Esta opción es siempre complicada porque implica gastos y mucho tiempo de espera. Si estás interesado, ponte en contacto con <a href="mailto:info@access-info.org">Access Info Europe</a> y podemos estudiar el caso contigo y ver cuál es la mejor opción.</p>
+	<h1 id="resurse">Surse de documentare&#8212;pentru curioşi</h1>
+	<p>http://www.nuvasuparati.info/node/1885 si http://www.nuvasuparati.info/node/1902; http://www.nuvasuparati.info/arhiva</p>
 
-    <h1 id="exceptii">Moderación de las solicitudes</h1>
-
-    <h2>18. ¿Cómo se moderan las solicitudes y los comentarios?</h2>
-    <p>Animamos a todo el mundo a realizar solicitudes y ofrecemos la posibilidad de que cualquier persona que esté registrada inserte comentarios en tus consultas.</p> 
-    <p>Nuestro equipo consulta los contenidos con regularidad y nos reservamos el derecho de eliminar declaraciones poco apropiadas, como las de naturaleza ofensiva o potencialmente difamatoria. Si elimináramos alguno de tus comentarios, te lo haríamos saber para que podamos aclararlo y buscar una solución.</p> 
-    <p>Del mismo modo, tú puedes denunciar contenidos inadecuados si los encuentras. Solo tiene que categorizar la solicitud como “Requiere revisión del administrador” y en seguida miraremos la solicitud, también puedes ponerte en contacto con nosotros y nos lo cuentas.</p>
-
-    <h2>19. Soy periodista o investigador, ¿es posible mantener la confidencialidad de mi solicitud hasta la publicación de mi artículo?</h2>
-    <p>Tuderechoasaber.es está diseñado para realizar solicitudes públicas. Todas las respuestas que recibimos se publican automáticamente en la web, para que todo el mundo las pueda consultar.</p> 
-    <p>Si eres un periodista, una ONG, investigador o simplemente deseas mantener el carácter confidencial de tu consulta hasta que hayas escrito tu artículo o por otras razones, tienes que enviar la solicitud de acceso directamente a la institución que creas conveniente, pero no a través de este sitio web.</p>
-
-    <h2>20. He realizado solicitudes de las que he conseguido respuesta, ¿puedo compartirla en este sitio?</h2>
-    <p>Lamentamos decirte que no es posible. Tuderechoasaber.es archiva las solicitudes realizadas a través del sitio web pero no pretende ser un archivo de todas las solicitudes de información. No se permite cargar otras solicitudes en esta página puesto que no podemos verificar si las respuestas proceden efectivamente de una institución pública.</p> 
-    <p>Si deseas hacer pública una respuesta, tienes que volver a realizar la solicitud a través de tuderechoasaber.es.</p>
-
-    <h1 id="reclamatie-plangere">Solicitar información en Comunidades Autónomas</h1>
-    <p>Aunque no exista una ley a nivel estatal, algunas Comunidades autónomas ya han aprobado sus leyes de Acceso a la Información. Además de la información que se indica en el título previo, es bueno conocer estas legislaciones, sobre todo para saber cuál es el procedimiento de acceso a la información que puede variar según el lugar donde se solicite la información.</p>
-
-    <h2>Navarra</h2>
-
-    <h3>¿Qué información se puede solicitar?</h3>
-    <p>Según el texto de <a href="http://www.parlamentodenavarra.es/UserFiles/File/BOP/B2012054.pdf">la Ley Foral de la Transparencia y del Gobierno Abierto,</a> toda la información, cualquiera que sea su soporte y forma de expresión, elaborada o en posesión de la Administración Pública. También aquella información bajo la autoría o propiedad de otras entidades o sujetos que presten servicios públicos o ejerzan potestades administrativas o funciones públicas, siempre que haya sido generada u obtenida en el ejercicio de su actividad pública o para el ejercicio de una actividad pública.</p>
-    <p>La ley establece unas excepciones que están en línea con lo que establecen los estándares internacionales, como son la seguridad pública o privacidad, y otras que puedes consultar en el artículo 23 de la ley.</p>
-    <p>Si tienes alguna duda sobre estas excepciones no dudes en contactar con nosotros en <a href="mailto:contacto@tuderechoasaber.es">contacto@tuderechoasaber.es</a>.</p>
-
-    <h3>¿A qué instituciones puedo solicitar la información?</h3>
-    <p>Esta ley solo se aplica a la Administración Pública de Navarra o entidades o sujetos que presten servicios públicos o ejerzan potestades administrativas o funciones públicas en Navarra, para el ejercicio de una actividad pública.</p>
-
-    <h3>¿Cuánto tiempo tienen para contestarme?</h3>
-    <p>Las instituciones públicas tienen 15 días para contestar. Tendrán 30 días si se trata de mucha información, en este caso debe informar al solicitante.</p>
-
-    <h3>Comentarios </h3>
-    Con la implementación de su ley de transparencia, la Comunidad de Navarra ha introducido un sistema de solicitud de información a través de su administración electrónica, esto implica el uso de un certificado digital. Este cambio hace que de momento no están contestando a las solicitudes que se realizan desde tuderechoasaber.es. 
-    Esta práctica es un obstáculo para el derecho de acceso a la información, puedes leer sobre esto en <a href="http://blog.tuderechoasaber.es/2013/01/los-ciudadanos-sin-firma-digital-no-pueden-solicitar-informacion-al-gobierno-de-navarra/">el post publicado en el blog de tuderechoasaber.es</a>. 
+	<h1 id="global">Accesul la informaţii în lume</h1>
+	<p>http://www.nuvasuparati.info/node/1876 http://www.foiadvocates.net/, http://www.freedominfo.org/ http://right2info.org/, http://www.nuvasuparati.info/node/1893 </p>
 
 </div>
