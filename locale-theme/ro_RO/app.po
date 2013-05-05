@@ -52,6 +52,11 @@ msgstr "Noutăți"
 msgid "Peticiones destacadas"
 msgstr "Solicitări remarcabile"
 
+msgid "Leer más »"
+msgstr "Citește mai mult »"
+
+msgid "Más novedades »"
+msgstr "Mai multe noutăți »"
 
 # Sidebar
 
