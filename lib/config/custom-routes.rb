@@ -10,8 +10,6 @@ if ENV["RAILS_ENV"] != "test"
             
             help.help_hg123 '/help/hg123', :action => 'hg123'
             help.help_legea544 '/help/legea544', :action => 'legea544'
-
-            help.help_google '/google2e14a7d5378fc373.html', :action => 'google_web_master.html'
         end
         
         # We want to start by showing the public bodies categories and search only
