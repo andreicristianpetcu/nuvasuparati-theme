@@ -2,7 +2,7 @@ if ENV["RAILS_ENV"] != "test"
     ActionController::Routing::Routes.draw do |map|
         # Additional help pages
         map.with_options :controller => 'help' do |help|
-            help.help_help_out '/help/help_out', :action => 'help_out'
+            # help.help_help_out '/help/help_out', :action => 'help_out'
 
             help.help_press '/help/press', :action => 'press'
             help.help_privacy_policy '/help/privacy_policy', :action => 'privacy_policy'
