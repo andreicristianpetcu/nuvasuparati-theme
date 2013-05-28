@@ -3,10 +3,6 @@
 
     <%= render :partial => 'track/tracking_request_links', :locals => { :track_thing => @track_thing, :own_request => @info_request.user == @user, :location => 'sidebar' } %>
 
-    <h2><%= _("Act on what you've learnt") %></h2>
-    
-    <%= render :partial => 'request/next_actions' %>
-
     <% if !@xapian_similar.nil? && @xapian_similar.results.size > 0 %>
        <h2><%= _('Similar requests')%></h2>
        <% for result in @xapian_similar.results %>
