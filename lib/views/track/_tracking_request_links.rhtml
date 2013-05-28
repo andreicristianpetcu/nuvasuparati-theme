@@ -6,7 +6,7 @@
     <% end %>
     <div class="request-tracker-<%= location %>">
         <div class="counter"><%= follower_count %></div>
-        <div class="counter-label"><%= n_("Persona siguiendo esta petición", "Personas siguiendo esta petición", follower_count) %></div>
+        <div class="counter-label"><%= n_("O persoană urmăreșe această solicitare", "Persoane urmăresc această solicitare", follower_count) %></div>
         <div style="clear:both"></div>
 
         <!-- Tracking links -->
@@ -30,7 +30,7 @@
             <div class="feed_link feed_link_<%=location%>">
                 <div class="track-button">
                     <%= link_to '<img src="/images/email-16.png" alt="">'.html_safe, do_track_url(track_thing) %>
-                    <%= link_to _("También quiero saber"), do_track_url(track_thing) %>
+                    <%= link_to _("Urmărește prin email"), do_track_url(track_thing) %>
                 </div>
             </div>
             
