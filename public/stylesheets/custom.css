@@ -353,6 +353,7 @@ h3, h3 a {
     }
     
 #frontpage-content {
+    width: 960px;
     background-color: #F5F5F5;
 }
 
