@@ -103,7 +103,7 @@ msgid "Proceso de las solicitudes"
 msgstr "Procesarea solicitărilor"
 
 msgid "Privacidad"
-msgstr "Politică de Confidențialitate"
+msgstr "Politică de confidențialitate"
 
 msgid "Basado en Alaveteli"
 msgstr "Bazat pe Alaveteli"
@@ -127,7 +127,7 @@ msgid "Condiciones de uso"
 msgstr "Termeni și condiții"
 
 msgid "Política de privacidad"
-msgstr "Politică de Confidențialitate"
+msgstr "Politică de confidențialitate"
 
 msgid "Ayuda"
 msgstr "Ajutor"
