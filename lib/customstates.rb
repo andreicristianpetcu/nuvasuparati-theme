@@ -31,7 +31,7 @@ module RequestControllerCustomStates
         # called after the core describe_state code.  It should
         # end by raising an error if the status is unknown
         if info_request.calculate_status == 'unsatisfactory_response'
-            flash[:notice] = _("Authority has provided an unsatisfactory response.")
+            flash[:notice] = _("Instituția a oferit un răspuns nesatisfăcător.")
             redirect_to unhappy_url(info_request)
         else
             raise "unknown calculate_status " + info_request.calculate_status
