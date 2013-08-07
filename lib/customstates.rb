@@ -13,7 +13,7 @@ module InfoRequestCustomStates
     module ClassMethods 
         def theme_display_status(status)
             if status == 'unsatisfactory_response'
-                _("Unsatisfactory response.")
+                _("Răspuns nesatisfăcător.")
             else
                 raise _("unknown status ") + status        
             end
