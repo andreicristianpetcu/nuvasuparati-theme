@@ -70,47 +70,39 @@
 =end
 %>
 
-<!--div class="ribbon">
-  <%= link_to _("Suntem în faza BETA!!"), help_about_path %>
-</div-->
-
 <div class="entirebody">
-    <div id="banner">
-      <div id="banner_inner">
-        <div class="lang"><%= render :partial => 'general/locale_switcher' %></div>
-        
-        <% if not (controller.action_name == 'signin' or controller.action_name == 'signup') %>
-          <div id="logged_in_bar">
-          <% if @user %>
-              <%= _('Hello, {{username}}!', :username => h(@user.name))%>
-
-                <% if @user %>
-                    <%=link_to _("My requests"), show_user_requests_path(:url_name => @user.url_name) %>
-                    <%=link_to _("My profile"), show_user_profile_path(:url_name => @user.url_name) %>
-                <% end %>
-
-
-              <%= link_to _("Sign out"), signout_url(:r => request.request_uri) %>
-          <% else %>
-              <%= link_to _("Sign in or sign up"), signin_url(:r => request.request_uri) %>
-          <% end %>
-          </div>
-        <% end %>   
-
-        <div id="navigation_search">
-            <% form_tag({:controller => "general", :action => "search_redirect"}, {:id => "navigation_search_form"}) do %>
-               <p>
-                   <%= text_field_tag 'query', params[:query], { :size => 40, :id => "navigation_search_query" } %>
-                   <%= image_submit_tag('search-button.png') %>
-               </p>
-            <% end %>
-        </div>
-        
-        <%= render :partial => 'general/orglink' %>
-        
-        <%= render :partial => 'general/topnav' %>
-      </div>
-    </div>
+	
+	<div class="row">
+		<div class="large-2 large-offset-10 columns">
+	        <% if not (controller.action_name == 'signin' or controller.action_name == 'signup') %>
+	          <div id="logged_in_bar">
+	          <% if @user %>
+	              <%= _('Hello, {{username}}!', :username => h(@user.name))%>
+	
+	                <% if @user %>
+	                    <%=link_to _("My requests"), show_user_requests_path(:url_name => @user.url_name) %>
+	                    <%=link_to _("My profile"), show_user_profile_path(:url_name => @user.url_name) %>
+	                <% end %>
+	
+	
+	              <%= link_to _("Sign out"), signout_url(:r => request.request_uri) %>
+	          <% else %>
+	              <%= link_to _("Sign in or sign up"), signin_url(:r => request.request_uri) %>
+	          <% end %>
+	          </div>
+	        <% end %>   
+		</div>
+	</div>	
+	
+	<div class="row">
+		<div class="large-3 columns">
+	        <%= render :partial => 'general/orglink' %>
+		</div>
+		<div class="large-9 columns">
+			<%= render :partial => 'general/topnav' %>
+		</div>	
+	</div>
+	
     <div id="wrapper">
         <div id="content">
             <% if flash[:notice] %>
@@ -127,6 +119,15 @@
         </div>
     </div>
 
+        <div>
+            <% form_tag({:controller => "general", :action => "search_redirect"}, {:id => "navigation_search_form"}) do %>
+               <p>
+                   <%= text_field_tag 'query', params[:query], { :size => 40, :id => "navigation_search_query" } %>
+                   <%= image_submit_tag('search-button.png') %>
+               </p>
+            <% end %>
+        </div>
+
     <%= render :partial => 'general/footer' %>
 
     <%= render :partial => 'general/before_body_end' %>
@@ -137,6 +138,11 @@
 <br />
 <input type="text">
 </div>
+		<script src="/nuvasuparati-theme/javascripts/foundation.min.js"></script>
+
+		<script>
+			$(document).foundation();
+		</script>
     </body>
 </html>
 
