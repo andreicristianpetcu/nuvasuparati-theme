@@ -57,7 +57,7 @@
 
         <%= render :partial => 'general/before_head_end' %>
     </head>
-    <body <%= "class='front'" if params[:action] == 'frontpage' %>>
+    <body>
 
         
 <% # code for popup advert for a campaign etc.
@@ -75,7 +75,7 @@
 	<div class="row">
 		<div class="large-2 large-offset-10 columns">
 	        <% if not (controller.action_name == 'signin' or controller.action_name == 'signup') %>
-	          <div id="logged_in_bar">
+	          <div id="nvs_logged_in_bar">
 	          <% if @user %>
 	              <%= _('Hello, {{username}}!', :username => h(@user.name))%>
 	
@@ -103,31 +103,33 @@
 		</div>	
 	</div>
 	
-    <div id="wrapper">
-        <div id="content">
-            <% if flash[:notice] %>
-                <div id="notice"><%= flash[:notice] %></div>
-            <% end %>
-            <% if flash[:error] %>
-                <div id="error"><%= flash[:error] %></div>
-            <% end %>
+	<div class="row">
+		<div class="large-3 columns">
+			<a href="http://nuvasuparati.info/"> <img alt="Personaj" src="/nuvasuparati-theme/images/valentin1.png"> </a>
+		</div>
 
-            <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
-            <%= yield :layout %>
+		<div class="large-9 columns">
+			<div class="row">
+	            <% if flash[:notice] %>
+	                <div id="notice"><%= flash[:notice] %></div>
+	            <% end %>
+	            <% if flash[:error] %>
+	                <div id="error"><%= flash[:error] %></div>
+	            <% end %>
+
+	            <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
+	            	<%= yield :layout %>
+	            </div>
             </div>
-            <div style="clear:both"></div>
-        </div>
-    </div>
-
-        <div>
-            <% form_tag({:controller => "general", :action => "search_redirect"}, {:id => "navigation_search_form"}) do %>
-               <p>
-                   <%= text_field_tag 'query', params[:query], { :size => 40, :id => "navigation_search_query" } %>
-                   <%= image_submit_tag('search-button.png') %>
-               </p>
-            <% end %>
-        </div>
-
+			<div class="row">
+	            <% form_tag({:controller => "general", :action => "search_redirect"}, {:id => "navigation_search_form"}) do %>
+	               <p>
+	                   <%= text_field_tag 'query', params[:query], { :size => 40, :id => "navigation_search_query" } %>
+	                   <%= image_submit_tag('search-button.png') %>
+	               </p>
+	            <% end %>
+			</div>
+		</div>
     <%= render :partial => 'general/footer' %>
 
     <%= render :partial => 'general/before_body_end' %>

@@ -1,66 +1,25 @@
+@font-face {
+	font-family: Open Sans;
+	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: Open Sans;
+	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-Light.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Open Sans;
+	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-ExtraBold.ttf");
+	font-weight: bold;
+}
+
 .entirebody {
 	background: url("/nuvasuparati-theme/images/billie_holiday.png");
 }
 
-@font-face {
-	font-family: Open Sans;
-	src: url("../fonts/open-sans/OpenSans-Light.ttf");
-}
-
-@font-face {
-	font-family: Open Sans;
-	src: url("../fonts/open-sans/OpenSans-Light.ttf");
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: Open Sans;
-	src: url("../fonts/open-sans/OpenSans-ExtraBold.ttf");
-	font-weight: bold;
-}
-
-body {
-	font-family: 'Open Sans';
-	font-weight: normal;
-}
-
-.topnav {
-	padding-right: 20;
-	margin: 20px auto;
-	padding: 5px;
-}
-
-.navigation {
-	font-family: 'Open Sans';
-	letter-spacing: 0.05em;
-}
-
-ul.navigation {
-	list-style: none outside none;
-	list-style-type: none;
-	border-bottom: 1px solid rgb(220, 220, 209);
-	border-top: 1px solid rgb(220, 220, 209);
-}
-
-.navigation > li {
-	display: inline-block; /* You can also add some margins here to make it look prettier */
-	zoom: 1;
-	*display: inline; /* this fix is needed for IE7- */
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.navigation > li.selected {
-	border-bottom: 2px solid rgb(0, 220, 255);
-	border-top: 2px solid rgb(0, 220, 255);
-}
-
-/* override foundation's css stuff */
-a {
-	color: rgb(0, 0, 0);
-}
-
-.logged_in_bar {
+#nvs_logged_in_bar {
 	background: none repeat scroll 0% 0% rgb(48, 52, 57);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -74,8 +33,53 @@ a {
 	padding-bottom: 0.75em;
 }
 
-.logged_in_bar a {
+#nvs_logged_in_bar a {
 	color: rgb(255, 255, 255);
+}
+
+div#nvs_logged_in_bar a {
+	color: rgb(228, 228, 228) !important;
+	font-size: 14px;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-weight: normal;
+}
+
+#nvs_topnav {
+	padding-right: 20px;
+	margin: 20px auto;
+	padding: 5px;
+}
+
+#nvs_navigation {
+	font-family: 'Open Sans';
+	letter-spacing: 0.05em;
+}
+
+ul#nvs_navigation {
+	list-style: none outside none;
+	list-style-type: none;
+	border-bottom: 1px solid rgb(220, 220, 209);
+	border-top: 1px solid rgb(220, 220, 209);
+}
+
+#nvs_navigation > li {
+	display: inline-block;
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#nvs_navigation > li.selected {
+	border-bottom: 2px solid rgb(0, 220, 255);
+	border-top: 2px solid rgb(0, 220, 255);
+}
+
+/* override foundation's css stuff */
+a {
+	color: rgb(0, 0, 0);
 }
 
 .logo {
@@ -101,7 +105,6 @@ h4.footer_category {
 	margin-top: 7px;
 }
 
-div.logged_in_bar a {
-	color: rgb(228, 228, 228) !important;
-	font-size: 14px;
+* {
+	color: #333332;
 }
