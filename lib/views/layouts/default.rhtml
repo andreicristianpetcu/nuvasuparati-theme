@@ -19,7 +19,7 @@
         <% if !params[:print_stylesheet].nil? %>
          <%= stylesheet_link_tag 'print', :rel => "stylesheet", :media => "all"  %>
         <% end %>
-        <%= javascript_include_tag 'jquery.js', 'jquery-ui.min','jquery.cookie.js' %>
+        <%= javascript_include_tag 'jquery.js', 'jquery-ui.min','jquery.cookie.js','/nuvasuparati-theme/javascripts/vendor/custom.modernizr.js' %>
 
         <% if @profile_photo_javascript %>
             <script type="text/javascript" src="/javascripts/jquery.Jcrop.js"></script>
@@ -138,7 +138,7 @@
 <br />
 <input type="text">
 </div>
-		<script src="/nuvasuparati-theme/javascripts/foundation.min.js"></script>
+        <%= javascript_include_tag '/nuvasuparati-theme/javascripts/foundation.min.js' %>
 
 		<script>
 			$(document).foundation();
