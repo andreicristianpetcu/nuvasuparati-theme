@@ -18,7 +18,7 @@ Dispatcher.to_prepare do
             end
             
             begin
-                @featured_requests = MySociety::Config.get("FRONTPAGE_FEATURED_REQUESTS", []).map{|i| InfoRequest.find(i)}
+                @featured_requests = InfoRequest.find(:all, :order => "updated_at desc", :limit => 4).reverse
             rescue
                 @featured_requests = []
             end
