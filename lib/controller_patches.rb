@@ -18,7 +18,7 @@ Dispatcher.to_prepare do
             end
             
             begin
-                @featured_requests = InfoRequest.find(:all, :order => "updated_at desc", :limit => 4).reverse
+                @featured_requests = InfoRequest.all(:conditions => { :described_state => ['successful', 'partially_successful'] }, :order => "updated_at asc", :limit => 4).reverse
             rescue
                 @featured_requests = []
             end

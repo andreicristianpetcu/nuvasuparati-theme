@@ -40,15 +40,20 @@
 		<div class="row">
 			<div class="large-12 columns">
 		    	<h2><%= _("Peticiones destacadas") %></h2>
-		    </div>
-		    <% @featured_requests.each do |featured_request| %>
-				<div class="large-6 columns">
-				    <%= render :partial => 'track/tracking_request_links', 
-				          :locals => { 
-				            :track_thing => TrackThing.create_track_for_request(featured_request),
-				            :own_request => featured_request.user == @user,
-				            :location => "frontpage"
-				          } %>
+			</div>
+		</div>
+		<div class="row">
+			<% 0.upto(3).each do |position| featured_request = @featured_requests[position]; break if featured_request.nil? %>
+					<% if position==2%>
+						<div class="row"></div>
+				    <% end %>
+					<div class="large-6 columns">
+					    <%= render :partial => 'track/tracking_request_links', 
+					          :locals => { 
+					            :track_thing => TrackThing.create_track_for_request(featured_request),
+					            :own_request => featured_request.user == @user,
+					            :location => "frontpage"
+					          } %>
 				</div>
 		    <% end %>
 		</div>
