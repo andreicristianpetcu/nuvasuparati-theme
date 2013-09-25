@@ -1,17 +1,12 @@
 @font-face {
 	font-family: Open Sans;
 	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-Light.ttf");
-}
-
-@font-face {
-	font-family: Open Sans;
-	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-Light.ttf");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: Open Sans;
-	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-ExtraBold.ttf");
+	src: url("/nuvasuparati-theme/fonts/open-sans/OpenSans-Bold.ttf");
 	font-weight: bold;
 }
 
@@ -72,14 +67,26 @@ ul#nvs_navigation {
 	padding-right: 5px;
 }
 
+#nvs_navigation > li > a {
+	color: rgb(0, 0, 0);
+	font-weight: normal;
+}
+
+
 #nvs_navigation > li.selected {
-	border-bottom: 2px solid rgb(0, 220, 255);
-	border-top: 2px solid rgb(0, 220, 255);
+	border-bottom: 2px solid #A9A8AD;
+	border-top: 2px solid #A9A8AD;
 }
 
 /* override foundation's css stuff */
 a {
-	color: rgb(0, 0, 0);
+	font-weight: bold;
+	color: #A9A8AD;
+}
+
+h4 a, h2 a {
+	font-weight: bold;
+	color: #000000;
 }
 
 .logo {
