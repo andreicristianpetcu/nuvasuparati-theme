@@ -162,6 +162,17 @@ h4.footer_category {
     font-weight: 700;
 }
 
+.header_right, #header_right {
+    width: 180px;
+    float: left;
+}
+
+#header_right {
+    float: right;
+    width: 230px;
+    padding-top: 27px;
+}
+
 .request-tracker-sidebar .counter {
     float: left;
     width: 100px;
