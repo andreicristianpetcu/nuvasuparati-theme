@@ -79,17 +79,6 @@ ul#nvs_navigation {
 	border-top: 2px solid #A9A8AD;
 }
 
-/* override foundation's css stuff */
-a {
-	font-weight: bold;
-	color: #A9A8AD;
-}
-
-h4 a, h2 a {
-	font-weight: bold;
-	color: #000000;
-}
-
 .logo {
 	display: block;
 	margin-left: auto;
@@ -178,7 +167,7 @@ h4.footer_category {
     width: 100px;
     font-weight: 700;
     font-size: 60px;
-    text-align: right;
+    text-align: center;
 }
 
 .request-tracker-frontpage .counter {
@@ -186,11 +175,95 @@ h4.footer_category {
     width: 100px;
     font-weight: 700;
     font-size: 60px;
-    text-align: right;
+    text-align: center;
 }
 
 .personaj {
 	width: 480px;
+}
+/* status icons */
+.icon_waiting_response {
+    background-image: url("/nuvasuparati-theme/images/states/icon_waiting_response.gif");
+    color: #009A9D;
+}
+.icon_waiting_clarification {
+    background-image: url("/nuvasuparati-theme/images/states/icon_waiting_clarification.gif");
+    color: #79BB59;
+}
+.icon_gone_postal {
+    background-image: url("/nuvasuparati-theme/images/states/icon_gone_postal.gif");
+    color: #009A9D;
+}
+.icon_not_held {
+    background-image: url("/nuvasuparati-theme/images/states/icon_info_not_held.gif");
+    color: #F19100;
+}
+.icon_rejected {
+    background-image: url("/nuvasuparati-theme/images/states/icon_info_refused.gif");
+    color: #E10613;
+}
+.icon_successful {
+    background-image: url("/nuvasuparati-theme/images/states/icon_successful.gif");
+    color: #79BB59;
+}
+.icon_partially_successful {
+    background-image: url("/nuvasuparati-theme/images/states/icon_partially_successful.gif");
+    color: #F19100;
+}
+.icon_internal_review {
+    background-image: url("/nuvasuparati-theme/images/states/icon_review_requested.gif");
+    color: #009A9D;
+}
+.icon_error_message {
+    background-image: url("/nuvasuparati-theme/images/states/icon_error_message.gif");
+    color: #858585;
+}
+.icon_requires_admin {
+    background-image: url("/nuvasuparati-theme/images/states/icon_requires_admin.gif");
+    color: #858585;
+}
+.icon_user_withdrawn {
+    background-image: url("/nuvasuparati-theme/images/states/icon_user_withdrawn.gif");
+    color: #E10613;
+}
+.icon_unsatisfactory_response {
+    background-image: url("/nuvasuparati-theme/images/states/icon_info_refused.gif");
+    color: #E10613;
+}
+
+/* override foundation's css stuff */
+a {
+	font-weight: bold;
+	color: #A9A8AD;
+}
+
+h4 a, h2 a {
+	font-weight: bold;
+	color: #000000;
+}
+
+h1 {
+    font-size: 2.0em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
 }
 
 * {
