@@ -104,11 +104,7 @@
 	</div>
 	
 	<div class="row">
-		<div class="large-3 columns">
-			<a href="http://nuvasuparati.info/"> <img alt="Personaj" src="/nuvasuparati-theme/images/valentin1.png"> </a>
-		</div>
-
-		<div class="large-9 columns">
+		<div class="large-9 columns large-offset-3">
 			<div class="row">
 	            <% if flash[:notice] %>
 	                <div id="notice"><%= flash[:notice] %></div>
@@ -116,12 +112,13 @@
 	            <% if flash[:error] %>
 	                <div id="error"><%= flash[:error] %></div>
 	            <% end %>
-
-	            <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
-	            	<%= yield :layout %>
-	            </div>
             </div>
 		</div>
+	</div>
+	<div class="row">
+	    <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
+	    	<%= yield :layout %>
+	    </div>
 	</div>
 </div>
 

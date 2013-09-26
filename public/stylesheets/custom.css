@@ -70,6 +70,7 @@ ul#nvs_navigation {
 #nvs_navigation > li > a {
 	color: rgb(0, 0, 0);
 	font-weight: normal;
+	font-size: small;
 }
 
 

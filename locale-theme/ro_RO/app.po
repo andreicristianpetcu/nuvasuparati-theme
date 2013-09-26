@@ -14,7 +14,7 @@ msgid "Solicitar información"
 msgstr "Solicitări FOI"
 
 msgid "Buscar solicitudes"
-msgstr "Caută solicitări"
+msgstr "Alte solicitări"
 
 msgid "Ejerce tu derecho a saber."
 msgstr "Exercită-ți dreptul de a ști!"
