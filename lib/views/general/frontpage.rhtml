@@ -8,8 +8,10 @@
 	<div class="row">
 		<div class="panel">
 			<div class="row">
+				<h3 class="frontpage_title">Ziua Internaţională a Dreptului de a Şti</h3>
+			</div>
+			<div class="row">
 				<div class="large-6 columns">
-					<h4>Ziua Internaţională a Dreptului de a Şti</h4>
 					<p>
 						În fiecare an, pe 28 septembrie, sărbătorim Ziua Internaţională a Dreptului de a Şti (<a href="http://en.wikipedia.org/wiki/International_Right_to_Know_Day">International Right to Know Day</a>). Scopul Right to Know Day este de a atrage atenţia la nivel mondial asupra dreptului fiecărui individ de a avea acces la informaţiile publice.						
 					</p>
@@ -81,7 +83,7 @@
 				<% 0.upto(3).each do |position| item = @blog_items[position]; break if item.nil? %>
 					<div class="large-6 columns">
 						<img src="<%= item['thumbnail'] %>" width="278" height="128"/>
-						<h4><a href='<%= item['link'] %>' target="_blank"><%= h item['title'] %></a></h4>
+						<h5><a href='<%= item['link'] %>' target="_blank"><%= h item['title'] %></a></h5>
 						<p>
 							<%= h excerpt(strip_tags(item['description'].to_s), "", 200) %>
 						</p>

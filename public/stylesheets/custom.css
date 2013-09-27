@@ -29,10 +29,7 @@
 }
 
 #nvs_logged_in_bar a {
-	color: rgb(255, 255, 255);
-}
-
-div#nvs_logged_in_bar a {
+	margins: 3px, 0, 3px;
 	color: rgb(228, 228, 228) !important;
 	font-size: 12px;
 }
@@ -50,7 +47,7 @@ body {
 
 #nvs_navigation {
 	font-family: 'Open Sans';
-	letter-spacing: 0.10em;
+	text-align: center;
 }
 
 ul#nvs_navigation {
@@ -63,8 +60,8 @@ ul#nvs_navigation {
 #nvs_navigation > li {
 	display: inline-block;
 	display: inline;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #nvs_navigation > li > a {
@@ -123,10 +120,18 @@ h4.footer_category {
     margin-right: 30px;
     width: 600px;
 }
-#left_column_flip {
-    width: 620px;
-    float: right;
+
+/** public_body_list*/
+
+#public_body_list #left_column_flip {
+    float: left;
     margin-top: 10px;
+}
+
+.request_listing, .user_listing, .body_listing {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin: 0px 0px -1px;
+    padding: 20px 0px 20px;
 }
 
 .controller_request h1, .controller_request h1 a {
@@ -191,6 +196,18 @@ h4.footer_category {
 .personaj {
 	width: 480px;
 }
+
+#signup .form_item_note, #signup .form_checkbox, #signin .form_note, #signin .form_checkbox {
+    font-size: 0.8em;
+    margin-left: 110px;
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+#request_form label, label.form_label, span#to_public_body {
+    font-size: 1em;
+}
+
 /* status icons */
 .icon_waiting_response {
     background-image: url("/nuvasuparati-theme/images/states/icon_waiting_response.gif");
@@ -241,6 +258,37 @@ h4.footer_category {
     color: #E10613;
 }
 
+
+form input[type="submit"], a.link_button_green, a.link_button_green_large {
+    color: rgb(0, 0, 0);
+    background-color: rgb(198, 68, 0);
+	border-color: rgb(208, 208, 208);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+	border-style: solid;
+	border-width: 1px;
+	line-height: 1;
+
+	margin: 0px 0px 1.25em;
+	position: relative;
+	
+	display: inline-block;
+	transition: background-color 300ms ease-out 0s;
+
+	font-family: inherit;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1em;
+	font-style: normal;
+	background-image: none;
+}	
+
+form input[type="submit"]:hover, a.link_button_green:hover, a.link_button_green_large:hover
+form input[type="submit"]:focus, a.link_button_green:focus, a.link_button_green_large:focus
+{
+    color: rgb(51, 51, 51);
+	background-color: rgb(208, 208, 208);
+}
+
 /* override foundation's css stuff */
 a {
 	font-weight: bold;
@@ -249,6 +297,16 @@ a {
 
 a:hover {
 	color: #c64400;
+}
+
+.frontpage_title {
+	text-align: center;
+	margin: 50px;
+}
+
+
+.request-tracker-frontpage .counter-label {
+	font-size: 14px;
 }
 
 h4 a, h2 a {

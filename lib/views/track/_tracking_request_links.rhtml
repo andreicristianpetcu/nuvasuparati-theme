@@ -2,13 +2,11 @@
 <div class="tracking-links-<%= location %>">
     <% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", track_thing.info_request.id]) + 1 %>
     <% if location == 'frontpage' %>
-      <h4><%= link_to excerpt(track_thing.info_request.title, "", 70), request_url(track_thing.info_request) %></h4>
+      <h5><%= link_to excerpt(track_thing.info_request.title, "", 70), request_url(track_thing.info_request) %></h5>
     <% end %>
     <div class="request-tracker-<%= location %>">
         <div class="counter"><%= follower_count %></div>
-        <div class="counter-label"><%= n_("O persoană urmăreșe această solicitare", "Persoane urmăresc această solicitare", follower_count) %></div>
-        <div style="clear:both"></div>
-
+        <div class="counter-label"><%= n_("O persoană urmăreșe această solicitare", "Persoane urmăresc această solicitare", follower_count) %>
         <!-- Tracking links -->
         <%
             if @user
@@ -42,7 +40,7 @@
               </div>
             <% end %>
         <% end %>
-
+        </div>
         <div style="clear:both"></div>
     </div>
 </div>
