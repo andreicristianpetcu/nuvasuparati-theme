@@ -73,19 +73,23 @@
 <div class="entirebody">
 	
 	<div class="row">
-		<div class="large-2 large-offset-10 columns">
-	        <% if not (controller.action_name == 'signin' or controller.action_name == 'signup') %>
-	          <div id="nvs_logged_in_bar">
-				<% if @user %>
-					<%= link_to _("My requests"), show_user_requests_path(:url_name => @user.url_name) %>
-					<%= link_to _("My profile"), show_user_profile_path(:url_name => @user.url_name) %>
-					<%= link_to _("Sign out"), signout_url(:r => request.request_uri) %>
-				<% else %>
-			        <%= link_to _("Sign in or sign up"), signin_url(:r => request.request_uri) %>
-	          	<% end %>
-	          </div>
-	        <% end %>   
-		</div>
+	    <% if not (controller.action_name == 'signin' or controller.action_name == 'signup') %>
+			<% if @user %>
+				<div class="large-5 large-offset-8 columns">
+			        <div id="nvs_logged_in_bar">
+						<%= link_to _("My requests"), show_user_requests_path(:url_name => @user.url_name) %>
+						<%= link_to _("My profile"), show_user_profile_path(:url_name => @user.url_name) %>
+						<%= link_to _("Sign out"), signout_url(:r => request.request_uri) %>
+					</div>
+				</div>
+			<% else %>
+				<div class="large-3 large-offset-9 columns">
+			        <div id="nvs_logged_in_bar">
+						<%= link_to _("Sign in or sign up"), signin_url(:r => request.request_uri) %>
+					</div>
+				</div>
+          	<% end %>
+	    <% end %>   
 	</div>	
 	
 	<div class="row">

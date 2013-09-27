@@ -29,7 +29,7 @@
 }
 
 #nvs_logged_in_bar a {
-	margins: 3px, 0, 3px;
+	margin: 7px;
 	color: rgb(228, 228, 228) !important;
 	font-size: 12px;
 }
