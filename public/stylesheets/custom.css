@@ -334,6 +334,16 @@ form input.use-datepicker[type="text"] {
 	background: url("/images/calendar.png") no-repeat scroll 100px 10px transparent;
 }	
 
+/* nvs custom stuff */
+
+.requesting_short_img {
+	width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* chaos begins. from here down all is a mess */
 
 .frontpage_title_parent h3 {
 	text-align: center;
