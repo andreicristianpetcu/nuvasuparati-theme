@@ -163,7 +163,7 @@ h4.footer_category {
 .controller_request h1, .controller_request h1 a {
     font-size: 28px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 10px;
     text-decoration: none;
 }
 
@@ -187,12 +187,21 @@ h4.footer_category {
 #right_column h2, #right_column h2 a {
     font-size: 18px;
     font-weight: 700;
-    margin: 5px;
 }
 
 .header_right, #header_right {
     width: 180px;
     float: left;
+}
+
+#right_column {
+    width: 300px;
+	margin: 5px;
+	padding: 10px;
+}
+
+.request_short_listing {
+	margin-top: 2em;
 }
 
 .controller_request #header_left {

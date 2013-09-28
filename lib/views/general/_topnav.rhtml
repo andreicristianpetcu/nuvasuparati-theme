@@ -5,6 +5,7 @@
         <li class="<%= 'selected' if params[:controller] == 'public_body' or (params[:controller] == 'request' and !['list'].include?(params[:action])) %>"><%= link_to _("Autorități publice"), body_index_path, :class => 'make-request-link' %></li>
         <li class="<%= 'selected' if params[:controller] == 'help' and params[:action] == 'about'%>"><%= link_to _("Cine suntem noi"), help_about_path %></li>
         <li><a href="http://blog.nuvasuparati.info/">Blog</a></li>
+        <li><a href="http://blog.nuvasuparati.info/biblioteca">Bibliotecă </a></li>
         <li class="<%= 'selected' if params[:controller] == 'help' and params[:action] == 'contact'%>"><%= link_to _("Contact"), help_contact_path %></li>
     </ul>
 </div>
