@@ -53,8 +53,6 @@ body {
 ul#nvs_navigation {
 	list-style: none outside none;
 	list-style-type: none;
-	border-bottom: 1px solid rgb(220, 220, 209);
-	border-top: 1px solid rgb(220, 220, 209);
 }
 
 #nvs_navigation > li {
@@ -62,6 +60,9 @@ ul#nvs_navigation {
 	display: inline;
 	padding-left: 10px;
 	padding-right: 10px;
+
+	border-bottom: 1px solid rgb(220, 220, 209);
+	border-top: 1px solid rgb(220, 220, 209);
 }
 
 #nvs_navigation > li > a {
@@ -69,7 +70,6 @@ ul#nvs_navigation {
 	font-weight: normal;
 	font-size: small;
 }
-
 
 #nvs_navigation > li.selected {
 	border-bottom: 2px solid #A9A8AD;
