@@ -88,7 +88,7 @@ ul#nvs_navigation {
     margin-right: auto;
 }
 
-#request_header input, #request_form textarea {
+#request_header input, #request_form textarea, #contact_message, #about_me_about_me, #comment_body {
     width: 550px;
 	height: 100%;
 }
@@ -137,7 +137,7 @@ h4.footer_category {
 	margin-top: 7px;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-bottom: 15%;
+	margin-bottom: 30px;
 }
 
 #left_column_flip {
@@ -181,11 +181,13 @@ h4.footer_category {
 #left_column {
     width: 600px;
     float: right;
+    margin: 5px;
 }
 
 #right_column h2, #right_column h2 a {
     font-size: 18px;
     font-weight: 700;
+    margin: 5px;
 }
 
 .header_right, #header_right {
@@ -325,14 +327,29 @@ a:hover {
 	color: #c64400;
 }
 
-input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+input[type="text"], input[type="password"], input[type="date"], 
+input[type="datetime"], input[type="datetime-local"], input[type="month"], 
+input[type="week"], input[type="email"], input[type="number"], 
+input[type="search"], input[type="tel"], input[type="time"], 
+input[type="url"], textarea, 
+#describe_state_form_1 label,
+#describe_state_form_2 label {
 	display: inline;
 }
 
-/* override main theme's stuff css stuff */
+ul li
+{
+	padding-left: 20px;
+}
+
+/* override main theme's stuff css stuff from main.css */
 form input.use-datepicker[type="text"] {
-	background: url("/images/calendar.png") no-repeat scroll 100px 10px transparent;
+	background: url("/images/calendar.png") no-repeat scroll 100px 10px white;
 }	
+
+div.controller_help dt a, div.controller_help h1 a, div#help_unhappy h1 a.hover_a {
+	background-color: transparent;
+}
 
 /* nvs custom stuff */
 

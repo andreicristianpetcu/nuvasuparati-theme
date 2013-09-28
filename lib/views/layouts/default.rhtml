@@ -78,7 +78,7 @@
 				<div class="large-5 large-offset-8 columns">
 			        <div id="nvs_logged_in_bar">
 						<%= link_to _("My requests"), show_user_requests_path(:url_name => @user.url_name) %>
-						<%= link_to _("My profile"), show_user_profile_path(:url_name => @user.url_name) %>
+						<%= link_to h(@user.name), show_user_profile_path(:url_name => @user.url_name) %>
 						<%= link_to _("Sign out"), signout_url(:r => request.request_uri) %>
 					</div>
 				</div>
