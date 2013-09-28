@@ -325,6 +325,16 @@ a:hover {
 	color: #c64400;
 }
 
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	display: inline;
+}
+
+/* override main theme's stuff css stuff */
+form input.use-datepicker[type="text"] {
+	background: url("/images/calendar.png") no-repeat scroll 100px 10px transparent;
+}	
+
+
 .frontpage_title_parent h3 {
 	text-align: center;
 }
